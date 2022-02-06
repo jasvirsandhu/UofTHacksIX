@@ -6,7 +6,7 @@
 }
 
 header{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.267)), url(../logo.png);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.267)), url(../TreeCode-Background.png);
     height: 100vh;
     background-size: 100%;
     background-position: center;
@@ -42,6 +42,7 @@ ul li.active a{
 
 .logo img{
     float: left;
+    top: 10%;
     width: 100px;
     height: auto;
 }
