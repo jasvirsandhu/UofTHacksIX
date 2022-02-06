@@ -31,5 +31,10 @@ module.exports = {
         res.setHeader('Content-Type', 'text/html');
         res.statusCode = 200;
         res.sendFile('playerBoard.html', { root: path.join(__dirname, '../views') });
+    },
+    scoreboard(req, res){
+        res.setHeader('Content-Type', 'text/html');
+        res.statusCode = 200;
+        res.sendFile('scoreBoard.html', { root: path.join(__dirname, '../views') });
     }
 }

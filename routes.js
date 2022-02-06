@@ -7,6 +7,7 @@ module.exports = function(app) {
     app.get('/api/send', api.sendSMS);
     app.get('/api/newGame', api.createGame);
     app.get('/api/joinGame', api.joinGame);
+    app.get('/api/getGame', api.getGame);
     app.get('/api/startGame', api.startGame);
     app.get('/api/verify', api.verify);
     app.post('/api/receive', api.receive);
@@ -14,4 +15,5 @@ module.exports = function(app) {
     app.get('/new', game.newGame);
     app.get('/join', game.joinGame);
     app.get('/lobby', game.lobby);
+    app.get('/scoreboard', game.scoreboard);
 }

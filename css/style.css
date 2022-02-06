@@ -71,6 +71,10 @@ ul li.active a{
     transform: translate(-50%,-50%);
 }
 
+.players {
+    text-align: center;
+}
+
 .btn{
     border: 1px solid white;
     padding: 10px  30px;

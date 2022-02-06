@@ -32,10 +32,24 @@ module.exports = {
         }
 
         //database call maybe for future scalability?
-        playersObj = games.get(intId).getPlayers();
+        let playersObj = [];
+        players.forEach (player => {
+            if (player.gameId == id){
+                playersObj.push(player);
+            }
+        });
+        // playersObj = games.get(intId).getPlayers();
 
         res.statusCode = 200;
         res.write(JSON.stringify(playersObj));
+        res.end();
+    },
+    getGame(req, res){
+        res.setHeader('Content-Type', 'application/json');
+        const id = req.query.id;
+        const currGame = games.get(parseInt(id));
+        //let status = {'status': currGame.getStatus()};
+        res.write(''+JSON.stringify(currGame));
         res.end();
     },
     createGame(req, res) {
@@ -55,10 +69,17 @@ module.exports = {
     startGame(req, res){
         const id = req.query.id;
         const currGame = games.get(parseInt(id));
-        const msg = 'Restore phrase: \n' + currGame.getScrambled();
-        res.write(msg);
-        util.sendMessage(msg, currGame.getPlayers());
-        res.end();
+        if (currGame.getStatus() == 0){
+            currGame.setStatus(1);
+            const msg = 'Restore phrase: \n' + currGame.getScrambled();
+            util.sendMessage(msg, currGame.getPlayers());
+            res.write(''+id);
+            res.end();
+        }
+        else{
+            res.write(''+id);
+            res.end();
+        }
     },
     joinGame(req, res) {
         const id = req.query.id;
@@ -67,7 +88,7 @@ module.exports = {
 
         const intId = parseInt(id);
         let currGame;
-        if (games.has(intId)) {
+        if (games.has(intId) && games.get(intId).getStatus() == 0) {
             currGame = games.get(intId);
             const player = { 'name': name, 'phone': phone, 'gameId': intId, 'score': 0, 'guess': 0 };
             players.set(phone, player);

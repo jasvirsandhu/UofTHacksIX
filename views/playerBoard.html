@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>New Game</title>
+        <title>Lobby</title>
         <link rel="stylesheet" type="text/css" href="css/style2.css">
     </head>
     <body>
@@ -11,7 +11,7 @@
                     <img src="TreeCode-Logo.png">
                 </div>
                 <ul>
-                    <li class="active"><a href="file:///C:/Users/Jasvir/Desktop/TreeCode/home.html">Home</a></li>
+                    <li class="active"><a onclick="navigate('')">Home</a></li>
                     <li><a href="https://onetreeplanted.org/products/plant-trees">Donate</a></li>
                 </ul>
             </div>
@@ -22,12 +22,12 @@
                 <p id="gameId">Game ID:</p>
             </div>
         <div class="players">  
-            <p>Players:</p> 
         </div>
         <div class="button2">
-            <a href="#" class="start-btn">START</a>
+            <a onclick="start()" class="start-btn">START</a>
         </div>
         </header>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
         <script src="./views/script.js"></script>
     </body>
 </html>
