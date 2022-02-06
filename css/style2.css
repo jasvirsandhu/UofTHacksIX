@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+
+}
+
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.267)), url(../logo.png);
+    height: 100vh;
+    background-size: 100%;
+    background-position: center;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color:white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.7s ease;
+}
+
+ul li a:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+ul li.active a{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.logo img{
+    float: left;
+    width: 100px;
+    height: auto;
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title{
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title h1{
+    color: white;
+    font-size: 50px;
+
+}
+
+.button{
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn{
+    border: 1px solid white;
+    padding: 10px  30px;
+    color: white;
+    text-decoration: none;
+    transition: 0.7s ease;
+}
+
+.btn:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.name{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.number{
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.id{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.gameID{
+    position: absolute;
+    top: 46%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+}
+
+.name{
+    color: white;
+    font-size: 15px;
+}
+
+.number{
+    color: white;
+    font-size: 15px;
+}
+
+.new-name{
+    color: white;
+    font-size: 15px;
+}
+
+.new-number{
+    color: white;
+    font-size: 15px;
+}
+
+.new-name{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.new-number{
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.id{
+    color: white;
+    font-size: 17px;
+}
+
+.newbtn{
+    border: 1px solid white;
+    padding: 10px  30px;
+    color: white;
+    text-decoration: none;
+    transition: 0.7s ease;
+}
+
+.newbtn:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.gameID{
+    color: white;
+    font-size: 30px;
+}
+
+.players{
+    color: white;
+    font-size: 20px;
+}
+
+.players{
+    position: absolute;
+    top: 59%;
+    left: 44%;
+    transform: translate(-50%,-50%);
+}
+
+.button2{
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.join-button{
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.start-btn{
+    border: 1px solid white;
+    padding: 10px  30px;
+    color: white;
+    text-decoration: none;
+    transition: 0.7s ease;
+}
+
+.start-btn:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+input[type=text] {
+    position: relative;
+    left: 0;
+    outline: none;
+    border-width: 0 0 2px 0;
+    border-color: rgb(86, 109, 77);
+    background-color: transparent;
+    font-size: 16px;
+  }
+
+
+
