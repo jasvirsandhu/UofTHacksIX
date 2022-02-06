@@ -6,7 +6,7 @@
 }
 
 header{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.267)), url(../TreeCode-Background.png);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url(../TreeCode-Background.png);
     height: 100vh;
     background-size: 100%;
     background-position: center;
